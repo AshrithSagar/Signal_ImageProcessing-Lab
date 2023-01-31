@@ -1,2 +1,7 @@
-# Signal_ImageProcessing-Lab
-Signal &amp; Image Processing Lab
+# Signal & Image Processing Lab
+
+MATLAB
+
+# License
+
+This project falls under the MIT license.
