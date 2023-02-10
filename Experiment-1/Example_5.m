@@ -15,7 +15,10 @@ phi = pi/4;  % Phase shift (radians)
 w = 2 * pi * f;  % Angular frequency (radians)
 x = A * sin(w * n + phi);  % Sinusoidal sequence
 
-plot(n, x)
+hold on;
+plot(n, x, 'b:')
+stem(n, x, 'b', 'filled')
+hold off;
 title('Sinusoidal wave')
 xlabel('n')
 ylabel('Amplitude')
