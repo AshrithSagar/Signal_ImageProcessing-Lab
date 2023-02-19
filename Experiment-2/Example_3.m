@@ -4,7 +4,7 @@ clc;
 clear;
 figure;
 
-%% With using inbuilt function
+%% Linearity property of LSI systems
 n = -100 : 100;  % Discrete time index
 f_1 = 0.01;  % Normalised frequency 1
 f_2 = 0.02;  % Normalised frequency 2
