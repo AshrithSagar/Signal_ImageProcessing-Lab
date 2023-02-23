@@ -11,7 +11,7 @@ DEN = [1, -0.4, 0.75];  % Denominator coefficients of T[z]
 
 h = impz(NUM, DEN);
 
-stem(n, h, 'filled')
+stem(h, 'filled')
 title('Impulse response of LSI system', 'Ashrith 200902016')
 legend('h')
 xlabel('n')
