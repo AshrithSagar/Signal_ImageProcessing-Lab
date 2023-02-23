@@ -23,5 +23,7 @@ hold on;
 stem(n, x, 'filled')
 stem(n, s_1, 'filled')
 stem(n, y_M, 'filled')
-legend('x', 's_1', 'y')
 hold off;
+legend('x', 's_1', 'y')
+title('M-point Moving Average Filter (Smoothing FIR Filter)')
+xlabel('n'), ylabel('Amplitude')
