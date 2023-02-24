@@ -2,7 +2,7 @@
 % Exercise - 1
 clc;
 clear;
-% figure;
+figure;
 
 %% Low pass FIR filter design using the window method
 w_p = 0.375;  % Pass band frequency
