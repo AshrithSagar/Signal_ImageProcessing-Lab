@@ -20,7 +20,7 @@ hold on;
 stem(x, 'filled')
 stem(y, 'filled')
 hold off;
-title('Accumulator response', 'Ashrith 20092016')
+title('Accumulator response', 'Ashrith 200902016')
 legend('Input x[n]', 'Output y[n]')
 xlabel('n'), ylabel('Amplitude')
 
@@ -35,6 +35,6 @@ hold on;
 stem(x, 'filled')
 stem(y, 'filled')
 hold off;
-title('Accumulator response', 'Ashrith 20092016')
+title('Accumulator response', 'Ashrith 200902016')
 legend('Input x[n]', 'Output y[n]')
 xlabel('n'), ylabel('Amplitude')
