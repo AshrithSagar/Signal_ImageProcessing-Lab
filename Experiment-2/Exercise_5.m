@@ -10,7 +10,7 @@ n = -100 : 100;  % Discrete time index
 NUM_a = [1, 2];  % Numerator coefficients of T[z]
 DEN_a = [1, 0.8, 0.12];  % Denominator coefficients of T[z]
 
-h_a = impz(NUM_a, DEN_a);
+h_a = impz(NUM_a, DEN_a);  % Impulse response
 
 subplot(211)
 stem(h_a, 'filled')
@@ -23,7 +23,7 @@ n = -100 : 100;  % Discrete time index
 NUM_b = [1, 1];  % Numerator coefficients of T[z]
 DEN_b = [1, -0.2, -0.15];  % Denominator coefficients of T[z]
 
-h_b = impz(NUM_b, DEN_b);
+h_b = impz(NUM_b, DEN_b);  % Impulse response
 
 subplot(212)
 stem(h_b, 'filled')
