@@ -15,9 +15,7 @@ h = impz(NUM, DEN);
 subplot(211)
 stem(h, 'filled')
 title('Impulse response of LSI system', 'Ashrith 200902016')
-legend('h')
-xlabel('n')
-ylabel('Amplitude')
+legend('h'), xlabel('n'), ylabel('Amplitude')
 
 %% (b)
 n = 0 : 2;  % Discrete time index
@@ -37,6 +35,4 @@ stem(y_c, 'filled')
 stem(y_f, 'filled')
 hold off
 title('Response of LSI system', 'Ashrith 200902016')
-legend('y_c', 'y_f')
-xlabel('n')
-ylabel('Amplitude')
+legend('y_c', 'y_f'), xlabel('n'), ylabel('Amplitude')
