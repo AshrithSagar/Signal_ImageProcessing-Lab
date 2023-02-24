@@ -8,10 +8,10 @@ figure;
 n = 0 : 100;  % Discrete time index
 k = 10;  % Delay
 
+f_1 = 0.01;  % Normalised frequency 1
+f_2 = 0.02;  % Normalised frequency 2
 c_1 = 2;
 c_2 = 3;
-f_1 = 0.01;
-f_2 = 0.02;
 
 x = c_1 * cos(2 * pi * f_1 * n) + c_1 * cos(2 * pi * f_2 * n);  % Input sequence
 x_d = x(k+1:end);  % Delayed input sequence
@@ -21,6 +21,7 @@ DEN = [1, -0.4, 0.75];  % Denominator coefficients of T[z]
 
 y = filter(NUM, DEN, x);  % Response of system for input sequence
 y_d = y(k+1:end);  % Delayed response sequence
+
 y_di = filter(NUM, DEN, x_d);  % Response of system for delayed input
 d = y_d - y_di;  % Difference
 
@@ -29,7 +30,6 @@ stem(y_di, 'filled')
 stem(y_d, 'filled')
 stem(d, 'filled')
 hold off;
-title('Shift Invariant property of LSI systems')
+title('Shift Invariant property of LSI systems', 'Ashrith 200902016')
 legend('y_{di}', 'y_d', 'd')
-xlabel('n')
-ylabel('Amplitude')
+xlabel('n'), ylabel('Amplitude')
