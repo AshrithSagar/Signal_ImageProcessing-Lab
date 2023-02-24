@@ -18,10 +18,12 @@ x2 = u_1 - u5;
 x_12 = conv(x1, x2);
 subplot(211)
 stem(x_12, 'k')
-xlabel('n'), ylabel('Amplitude'), title('x[n] = x1[n] \ast x2[n]')
+title('x[n] = x1[n] \ast x2[n]', 'Ashrith 200902016')
+xlabel('n'), ylabel('Amplitude')
 
 %% Convolution (x1 * x2), using conv()
 x_21 = conv(x2, x1);
 subplot(212)
 stem(x_21, 'k')
-xlabel('n'), ylabel('Amplitude'), title('x[n] = x2[n] \ast x1[n]')
+title('x[n] = x2[n] \ast x1[n]', 'Ashrith 200902016')
+xlabel('n'), ylabel('Amplitude')
