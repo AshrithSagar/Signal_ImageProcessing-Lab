@@ -18,24 +18,22 @@ hold on;
 stem(n, x, 'filled')
 stem(n, y, 'filled')
 hold off;
-title('Bilinear interpolator response')
+title('Bilinear interpolator response', 'Ashrith 200902016')
 legend('Input x[n]', 'Output y[n]')
-xlabel('n')
-ylabel('Amplitude')
+xlabel('n'), ylabel('Amplitude')
 
 %% With using inbuilt function
 n = -5 : 15;  % Discrete time index
 x = [n == 0] + 2 * [n == 4] - 3 * [n == 8];  % Input signal
 y = filter([1/2, 1, 1/2], [1], x);
 y(end+1) = 0;
-y = y(2:end);  % Left shift
+y = y(2:end);  % Left shift by 1 unit
 
 subplot(212)
 hold on;
 stem(n, x, 'filled')
 stem(n, y, 'filled')
 hold off;
-title('Bilinear interpolator response')
+title('Bilinear interpolator response', 'Ashrith 200902016')
 legend('Input x[n]', 'Output y[n]')
-xlabel('n')
-ylabel('Amplitude')
+xlabel('n'), ylabel('Amplitude')
