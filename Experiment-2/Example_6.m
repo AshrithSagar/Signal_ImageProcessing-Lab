@@ -37,12 +37,16 @@ for i = start_index_x1 + start_index_x2 : end_index_x1 + end_index_x2
 	x(n == i) = s;
 	subplot(211)
 	stem(n, x1), hold on, stem(n, temp, 'r'), hold off
+	title("Input signals x1 and x2", 'Ashrith 200902016')
 	xlabel('n'), ylabel('Amplitude'), legend('x1[m]', 'x2[n-m]')
 	subplot(212)
 	stem(n, x, 'k')
-	xlabel('n'), ylabel('Amplitude'), title('x[n] = x1[n] \ast x2[n]')
+	title('x[n] = x1[n] \ast x2[n]', 'Ashrith 200902016')
+	xlabel('n'), ylabel('Amplitude')
 	pause(0.5)
 end
+
+pause(2)
 
 %% Convolution (x2 * x1)
 flip_x1 = fliplr(x1);  % x1[-n]
@@ -60,9 +64,11 @@ for i = start_index_x1 + start_index_x2 : end_index_x1 + end_index_x2
 	x(n == i) = s;
 	subplot(211)
 	stem(n, x2), hold on, stem(n, temp, 'r'), hold off
+	title("Input signals x1 and x2", 'Ashrith 200902016')
 	xlabel('n'), ylabel('Amplitude'), legend('x2[m]', 'x1[n-m]')
 	subplot(212)
 	stem(n, x, 'k')
-	xlabel('n'), ylabel('Amplitude'), title('x[n] = x2[n] \ast x1[n]')
+	title('x[n] = x2[n] \ast x1[n]', 'Ashrith 200902016')
+	xlabel('n'), ylabel('Amplitude')
 	pause(0.5)
 end
