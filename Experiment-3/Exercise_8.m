@@ -10,3 +10,5 @@ DEN = [1, -1.8, 0.81];
 Fs = 512;
 sys = filt(NUM, DEN);
 freqz(NUM, DEN, Fs)
+figure;
+zplane(NUM, DEN)
