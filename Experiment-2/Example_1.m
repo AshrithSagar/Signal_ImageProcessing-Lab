@@ -4,16 +4,37 @@ clc;
 clear;
 figure;
 
-%% With using inbuilt function
+%% Without using inbuilt function
 n = -5 : 10; % Discrete time index
 x = [n >= 0] + 2 * [n >= 1] - 3 * [n >= 3];  % Input signal
-y = filter([1], [1, -1], x);
 
+y = 0;  % y[-1] = 0
+for k = 1 : length(n)
+	term = y(end) + x(k);
+	y = [y term];
+end
+y = y(2:end);  % Left shift by 1 unit
+
+subplot(211)
 hold on;
 stem(x, 'filled')
 stem(y, 'filled')
 hold off;
 title('Accumulator response')
 legend('Input x[n]', 'Output y[n]')
-xlabel('n')
-ylabel('Amplitude')
+xlabel('n'), ylabel('Amplitude')
+
+%% With using inbuilt function
+n = -5 : 10; % Discrete time index
+x = [n >= 0] + 2 * [n >= 1] - 3 * [n >= 3];  % Input signal
+
+y = filter([1], [1, -1], x);
+
+subplot(212)
+hold on;
+stem(x, 'filled')
+stem(y, 'filled')
+hold off;
+title('Accumulator response')
+legend('Input x[n]', 'Output y[n]')
+xlabel('n'), ylabel('Amplitude')
