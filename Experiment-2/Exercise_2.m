@@ -13,6 +13,4 @@ h = impz(NUM, DEN);
 
 stem(h, 'filled')
 title('Impulse response of LSI system', 'Ashrith 200902016')
-legend('h')
-xlabel('n')
-ylabel('Amplitude')
+legend('h'), xlabel('n'), ylabel('Amplitude')
