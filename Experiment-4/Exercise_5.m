@@ -36,7 +36,7 @@ hold on
 plot(y, 'b')
 plot(x, 'r')
 hold off
-title('Filter output')
+title('Filter output', "Ashrith 200902016");
 xlabel('n'), ylabel('Amplitude'), legend('y', 'x')
 
 %% (d) Plot the spectrum of the input and the filtered signal.
@@ -46,5 +46,5 @@ hold on
 plot(n * Fs / n_max, abs(fft(y)), 'b')
 plot(n * Fs / n_max, abs(fft(x)), 'r')
 hold off
-title('Fourier Transform')
-xlabel('frequency'), ylabel('Gain'), legend('y', 'x')
+title('Fourier Transform', "Ashrith 200902016");
+xlabel('Frequency'), ylabel('Magnitude'), legend('y', 'x')
