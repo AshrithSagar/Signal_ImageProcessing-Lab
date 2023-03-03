@@ -2,7 +2,6 @@
 % Exercise - 4
 clc;
 clear;
-figure;
 
 %% Band stop FIR filter design using the window method
 Fs = 2000;  % Sampling frequency
@@ -19,10 +18,14 @@ N = floor((2 * k * pi) / (w_up - w_us));  % Order of filter
 win = window(@hamming, N+1);  % Hamming window
 NUM = fir1(N, [w_lc, w_uc], 'stop', win);  % Numerator coefficients of T[z]
 DEN = [1];  % Denominator coefficients of T[z]
-freqz(NUM, DEN)  % Frequency response
+
+[H, W] = freqz(NUM, DEN);  % Frequency response
+
+figure; grid ON;
+plot(W / pi, 20 * log10(abs(H)))  % Magnitude spectrum
+title('Magnitude spectrum of Band stop FIR filter', "Ashrith 200902016");
+xlabel('Normalized Frequency  (\times\pi rad/sample)'), ylabel('Gain (dB)');
 
 figure;
-H = freqz(NUM, DEN);  % Frequency response
-plot(abs(H))  % Magnitude spectrum
-title('Magnitude spectrum of Band stop FIR filter')
-xlabel('frequency'), ylabel('Gain')
+zplane(NUM, DEN)
+title('Pole-Zero Plot', "Ashrith 200902016");
