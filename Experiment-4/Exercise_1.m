@@ -15,6 +15,7 @@ NUM = fir1(N, w_c, 'low', win);  % Numerator coefficients of T[z]
 DEN = [1];  % Denominator coefficients of T[z]
 
 [H, W] = freqz(NUM, DEN);  % Frequency response
+
 figure;
 plot(W / pi, 20 * log10(abs(H)))  % Magnitude spectrum
 title('Magnitude spectrum of Low pass FIR filter'); grid ON;
