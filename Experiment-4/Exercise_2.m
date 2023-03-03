@@ -23,3 +23,4 @@ xlabel('Normalized Frequency  (\times\pi rad/sample)'), ylabel('Gain (dB)');
 
 figure;
 zplane(NUM, DEN)
+title('Pole-Zero Plot', "Ashrith 200902016");
