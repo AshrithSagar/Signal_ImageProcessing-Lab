@@ -16,10 +16,10 @@ DEN = [1];  % Denominator coefficients of T[z]
 
 [H, W] = freqz(NUM, DEN);  % Frequency response
 
-figure;
+figure; grid ON;
 plot(W / pi, 20 * log10(abs(H)))  % Magnitude spectrum
-title('Magnitude spectrum of Low pass FIR filter'); grid ON;
-xlabel('Normalized Frequency  (\times\pi rad/sample)'), ylabel('Gain (dB)')
+title('Magnitude spectrum of Low pass FIR filter', "Ashrith 200902016");
+xlabel('Normalized Frequency  (\times\pi rad/sample)'), ylabel('Gain (dB)');
 
 figure;
 zplane(NUM, DEN)
