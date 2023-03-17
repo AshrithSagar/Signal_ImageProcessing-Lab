@@ -42,9 +42,16 @@ xlabel('n'), ylabel('Amplitude'), legend('y', 'x')
 %% (d) Plot the spectrum of the input and the filtered signal.
 
 figure;
+subplot(211)
 hold on
-plot(n * Fs / n_max, abs(fft(y)), 'b')
 plot(n * Fs / n_max, abs(fft(x)), 'r')
 hold off
-title('Fourier Transform', "Ashrith 200902016");
-xlabel('Frequency'), ylabel('Magnitude'), legend('y', 'x')
+title('Input Fourier Transform', "Ashrith 200902016");
+xlabel('Frequency'), ylabel('Magnitude'), legend('x')
+
+subplot(212)
+hold on
+plot(n * Fs / n_max, abs(fft(y)), 'b')
+hold off
+title('Output Fourier Transform', "Ashrith 200902016");
+xlabel('Frequency'), ylabel('Magnitude'), legend('y')
