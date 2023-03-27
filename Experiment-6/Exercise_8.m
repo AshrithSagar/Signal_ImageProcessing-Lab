@@ -9,7 +9,7 @@ img_gray = rgb2gray(img_rgb);  % Convert to grayscale
 [M, N] = size(img_gray);
 
 %% Image cropping
-img_crop = imcrop(img_gray, [200 400 300 500]);
+img_crop = imcrop(img_gray, [150 100 225 500]);
 
 %% Display image
 figure;
