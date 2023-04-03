@@ -12,7 +12,7 @@ img_gray = rgb2gray(img_rgb);  % Convert to grayscale
 for i = 1 : M
    for j = 1 : N
        MSB = nextpow2(img_gray(i, j)) - 1;
-       img_binary(i, j) = 2^MSB;
+       img_bpm(i, j) = 2^MSB;
    end
 end
 
@@ -22,5 +22,5 @@ imshow(img_gray)
 title('Original Lenna (512\times 512)')
 
 figure;
-imshow(img_binary)
-title('Binary Lenna (512\times 512)')
+imshow(img_bpm)
+title('Bit Plane Mapped Lenna (512\times 512)')
