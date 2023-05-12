@@ -39,5 +39,5 @@ imshow(img_gray)
 title('Original Lenna (512\times 512)')
 
 figure;
-imshow(img_contrast_stretched)
+imshow(img_contrast_stretched_2)
 title('Contrast Stretched Lenna (512\times 512)')
