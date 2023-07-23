@@ -23,7 +23,7 @@ Noise power:
 $$\sigma_n^2 = \frac{1}{NT(M-1)}\sum_{m=1}^{M}\sum_{n=1}^{N}[y_k(n) - \bar y_k(n)]^2$$
 
 Signal power:
-$$\sigma_{\bar y}^2 = \frac{1}{NT} \Big\{ \sum_{n=1}^{N} [\bar y(n)]^2\Big\} - \frac{\sigma_\eta^2}{M}$$
+$$\sigma_{\bar y}^2 = \frac{1}{NT} \{ \sum_{n=1}^{N} [\bar y(n)]^2 \} - \frac{\sigma_\eta^2}{M}$$
 $$SNR = \frac{\sigma_{\bar y}^2}{\sigma_\eta^2}$$
 
 Here, $T=\frac{1}{f_s}$ *sec* is the sampling interval.
