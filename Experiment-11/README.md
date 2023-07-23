@@ -30,3 +30,38 @@ Here, $T=\frac{1}{f_s}$ *sec* is the sampling interval.
 
 Kamath et al. also computed the Euclidean distance between the original ERP signals and the averaged signal obtained as
 $$D = \frac{1}{M}\sum_{k=1}^{M}\sqrt{\sum_{n=1}^{N}[y_k(n)-\bar y(n)]^2}$$
+
+## Exercises to be worked by hand
+
+1. Write the equation to define the mean of a random variable 𝑥 in terms of its probability density function (PDF) 𝑝𝑥(𝑥).
+
+2. A variable y is given 𝑎𝑠 𝑦 = 𝑥 + 𝜂 where 𝑥 and 𝜂 are statistically independent random processes. Starting with the joint PDF of the random processes 𝑥 and 𝜂, derive an expression for the mean of 𝑦 = 𝑥 + 𝜂. Show all steps.
+
+3. Write the definition of the variance of 𝑥 using the expectation operator and the PDF of 𝑥.
+
+4. With 𝑦 defined as in item 2 above, derive the relationship between the variance of 𝑦, 𝑥, and 𝜂 using the expectation operator (no need to use PDFs and integrals in this case). Show all steps.
+
+## Averaging of SEPs
+
+Copy the data files E11 to E2424 and the Matlab program esoepX.m. The signals were filtered to the band 0.1 − 100 Hz and sampled at 1000 Hz. The number of samples in each signal is N = 511.
+
+The signals are numbered as *Ekk*, where *k* is the trial number, with 𝑘 = 1, 2, . . . , 𝑀, and M = 24. The signals are numbered in the time sequence of the stimulation trials.
+
+Write a Matlab function to compute the average of a certain number of signals (trials) to be specified as an input parameter.
+
+Write a Matlab function to compute the SNR and Euclidean distance between a certain averaged signal and the corresponding set of original signals used, as specified in Eq 5 and 6.
+
+Write a Matlab program to compute several averages of selected ERP signals as follows:
+
+1. Trials 1 − 6, 7 − 12, 13 − 18, and 19 − 24.
+2. Trials 1 − 8, 9 − 16, and 17 − 24.
+3. Trials 1 − 12 and 13 − 24.
+4. Trials 1 − 24.
+
+1. For the case with the trials 1−6, plot each of the signals used as well as the result of
+
+averaging using subplots; for the remaining cases, plot only the results of averaging. For all cases, compute the SNR and Euclidean distance values as given above.
+
+Prepare a table of the various SNR and the Euclidean distance values obtained along with the corresponding signals (trials) used and the number of signals averaged (M). Analyze the results and discuss your findings.
+
+**Reference**: 1. M. V. Kamath, G. Tougas, S. Hollerbach, R. Premji, D. Fitzpatrick, G. Shine, and A. R. M. Upton, “Estimation of habituation and signal-to-noise ratio of cortical evoked potentials to esophageal electrical and mechanical stimulation,” Medical and Biological Engineering and Computing, 35:343-347, 1997.
