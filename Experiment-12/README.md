@@ -21,7 +21,7 @@ The next operation is the squaring operation, which emphasizes the higher values
 
    Derive its transfer function as well as the magnitude and phase parts of its frequency response. Explain the nature and effects of the filter.
 
-   ![Figure-2](Figure-2.png)
+![Figure-2](Figure-2.png)
 
 2. Another digital filter is specified in terms of its impulse response as $$h_2(𝑛) = \delta(𝑛) − \delta(𝑛 − 1).$$
 
