@@ -4,19 +4,19 @@ Using MATLAB
 
 ## Experiments
 
-1. Basic sequences and operations
-2. Discrete time system and its properties
-3. Discrete Fourier transform and its properties
-4. Design & implementation of finite impulse response (FIR) filters
-5. Design & implementation of infinite impulse response (IIR) filters
-6. Image processing - display and simple manipulations
-7. Contrast enhancement and discrete Fourier transform of an image
-8. Image filtering
-9. Radon transform and connected component labelling
-10. Convolution back projection algorithm, hough transform and geometric transformation
-11. Synchronised averaging for noise reduction
-12. Detection of the QRS and parameterisation of the ECG
+1. [Basic sequences and operations](Experiment-1/)
+2. [Discrete time system and its properties](Experiment-2/)
+3. [Discrete Fourier transform and its properties](Experiment-3/)
+4. [Design & implementation of finite impulse response (FIR) filters](Experiment-4/)
+5. [Design & implementation of infinite impulse response (IIR) filters](Experiment-5/)
+6. [Image processing - display and simple manipulations](Experiment-6/)
+7. [Contrast enhancement and discrete Fourier transform of an image](Experiment-7/)
+8. [Image filtering](Experiment-8/)
+9. [Radon transform and connected component labelling](Experiment-9/)
+10. [Convolution back projection algorithm, hough transform and geometric transformation](Experiment-10/)
+11. [Synchronised averaging for noise reduction](Experiment-11/)
+12. [Detection of the QRS and parameterisation of the ECG](Experiment-12/)
 
-# License
+## License
 
-This project falls under the MIT license.
+This project falls under the [MIT license](LICENSE).
