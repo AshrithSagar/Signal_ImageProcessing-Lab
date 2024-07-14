@@ -1,0 +1,99 @@
+Experiment - 4
+
+------------------------------------------
+Exercise - 1
+
+w_p = 0.375;
+w_s = 0.5;
+w_c = w_p + (w_s - w_p) / 2;
+k = 4;
+N = ceil((2 * k * pi) / (w_s - w_p));
+win = window(@hamming, N+1);
+NUM = fir1(N, w_c, 'low', win);
+DEN = [1];
+freqz(NUM, DEN)
+
+------------------------------------------
+Exercise - 2
+
+w_s = 0.2;
+w_p = 0.3;
+w_c = w_s + (w_p - w_s) / 2;
+k = 4;
+N = ceil((2 * k * pi) / (w_p - w_s));
+win = window(@hamming, N+1);
+NUM = fir1(N, w_s, 'high', win);
+DEN = [1];
+freqz(NUM, DEN)
+
+------------------------------------------
+Exercise - 3
+
+Fs = 2000;
+w_lp = 300 / Fs;
+w_ls = 200 / Fs;
+w_up = 600 / Fs;
+w_us = 700 / Fs;
+w_lc = w_ls + (w_lp - w_ls) / 2;
+w_uc = w_up + (w_up - w_up) / 2;
+% Stop band attenuation = 50dB
+k = 4;
+N = ceil((2 * k * pi) / (w_us - w_up));
+win = window(@hamming, N+1);
+NUM = fir1(N, [w_lc, w_uc], 'bandpass', win);
+DEN = [1];
+freqz(NUM, DEN)
+
+------------------------------------------
+Exercise - 4
+
+Fs = 2000;
+w_lp = 200 / Fs;
+w_ls = 300 / Fs;
+w_up = 700 / Fs;
+w_us = 600 / Fs;
+w_lc = w_lp + (w_ls - w_lp) / 2;
+w_uc = w_us + (w_up - w_us) / 2;
+% Stop band attenuation = 50dB
+k = 4;
+N = floor((2 * k * pi) / (w_up - w_us));
+win = window(@hamming, N+1);
+NUM = fir1(N, [w_lc, w_uc], 'stop', win);
+DEN = [1];
+freqz(NUM, DEN)
+
+------------------------------------------
+Exercise - 5
+
+% (a)
+n = 1 : 100;
+s_10 = sin(10 * n);
+s_30 = sin(30 * n);
+s_50 = sin(50 * n);
+x = s_10 + s_30 + s_50;
+
+% (b)
+Fs = 200;
+w_lp = 20 / Fs;
+w_ls = 10 / Fs;
+w_up = 40 / Fs;
+w_us = 50 / Fs;
+w_lc = w_ls + (w_lp - w_ls) / 2;
+w_uc = w_up + (w_up - w_up) / 2;
+k = 4;
+N = ceil((2 * k * pi) / (w_us - w_up));
+win = window(@hamming, N+1);
+NUM = fir1(N, [w_lc, w_uc], 'bandpass', win);
+DEN = [1];
+freqz(NUM, DEN)
+
+% (c)
+y = filter(NUM, DEN, x);
+
+% (d)
+plot(abs(y))
+plot(abs(x))
+plot(angle(y))
+plot(angle(x))
+
+------------------------------------------
