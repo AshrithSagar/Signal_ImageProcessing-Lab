@@ -3,8 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Signal and Image Processing Lab
 ---
-# Signal and Image Processing Lab
 
 Welcome to the Signal and Image Processing Lab.
 
