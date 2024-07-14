@@ -4,3 +4,10 @@
 
 layout: home
 ---
+# Signal and Image Processing Lab
+
+Welcome to the Signal and Image Processing Lab.
+
+## Experiments
+
+- [Experiment 1](/experiments/experiment-1)
