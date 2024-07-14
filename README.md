@@ -1,6 +1,6 @@
 # Signal & Image Processing Lab
 
-Using MATLAB
+Using MATLAB <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB" width="30"/>
 
 ## Experiments
 
