@@ -10,4 +10,4 @@ Welcome to the Signal and Image Processing Lab.
 
 ## Experiments
 
-- [Experiment 1](/experiments/experiment-1)
+- [Experiment 1]({{ site.baseurl }}/experiments/experiment-1)

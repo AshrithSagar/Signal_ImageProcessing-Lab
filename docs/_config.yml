@@ -21,7 +21,7 @@
 title: Signal & Image Processing Lab
 email: ashrith.yedlapalli&#64;gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Signal and Image Processing Lab Repository
+  Repository for Signal and Image Processing Lab codes
 baseurl: "/Signal_ImageProcessing-Lab" # the subpath of your site, e.g. /blog
 url: "https://ashrithsagar.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  AshrithSagar
@@ -50,3 +50,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  experiments:
+    output: true
+    permalink: /:collection/:path/
