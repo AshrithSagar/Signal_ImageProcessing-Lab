@@ -15,6 +15,7 @@ class Updater:
     ):
         self.branch = branch
         self.save_dir = save_dir
+        self.experiments = range(1, 13)
 
         os.makedirs(save_dir, exist_ok=True)
         self.exclude = self.get_exclude(exclude_file)
@@ -84,22 +85,53 @@ class Updater:
 
     def _create_experiments(self):
         """Create Experiment-{01..12} in self.save_dir"""
-        for i in range(1, 13):
+        for i in self.experiments:
             file = os.path.join(self.save_dir, f"Experiment-{i:02}.md")
             if os.path.exists(file):
                 continue
             with open(file, "w") as file_handle:
                 file_handle.write(f"# Experiment {i}\n\n")
 
-    def _update_experiments(self):
-        for file, content in self.content.items():
-            if file.startswith("Experiment"):
-                pass
+    def _update_experiment(self, number: int):
+        def segregate():
+            experiment: dict[str, str] = {}
+            for file, content in self.content.items():
+                if file.startswith(f"Experiment-{number}/"):
+                    file = file.replace(f"Experiment-{number}/", "")
+                    experiment[file] = content
+
+            examples: dict[str, str] = {}
+            exercises: dict[str, str] = {}
+            for file, content in experiment.items():
+                if file.startswith(f"Example"):
+                    examples[file] = content
+                elif file.startswith(f"Exercise"):
+                    exercises[file] = content
+            return examples, exercises
+
+        def write(contents, file_handle):
+            for title, content in contents.items():
+                title = title.replace(".m", "")
+                title = title.replace("_", "-")
+                file_handle.write(f"### {title}\n\n")
+                file_handle.write("```matlab")
+                file_handle.write(content)
+                file_handle.write("```\n\n")
+
+        examples, exercises = segregate()
+        file = os.path.join(self.save_dir, f"Experiment-{number:02}.md")
+        with open(file, "w") as file_handle:
+            file_handle.write(f"# Experiment-{number}\n\n")
+            file_handle.write("## Examples\n\n")
+            write(examples, file_handle)
+            file_handle.write("## Exercises\n\n")
+            write(exercises, file_handle)
 
     def update(self):
         # self._update_home()
         self._create_experiments()
-        # self._update_experiments()
+        for number in self.experiments:
+            self._update_experiment(number)
 
 
 if __name__ == "__main__":
