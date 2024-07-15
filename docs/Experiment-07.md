@@ -262,4 +262,3 @@ figure;
 plot(abs(img_rotated_dft))
 title('Magnitude spectrum of DFT of Rotated Lenna')
 ```
-

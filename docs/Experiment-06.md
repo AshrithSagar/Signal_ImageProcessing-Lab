@@ -263,4 +263,3 @@ figure;
 imshow(img_negative)
 title('Negative Lenna (512\times 512)')
 ```
-

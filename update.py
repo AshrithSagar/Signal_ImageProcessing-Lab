@@ -113,20 +113,21 @@ class Updater:
             for title, content in contents.items():
                 title = title.replace(".m", "")
                 title = title.replace("_", "-")
-                file_handle.write(f"### {title}\n\n")
+                file_handle.write(f"\n### {title}\n\n")
                 file_handle.write("```matlab\n")
                 file_handle.write(content)
-                file_handle.write("```\n\n")
+                file_handle.write("```\n")
 
         examples, exercises = segregate()
         file = os.path.join(self.save_dir, f"Experiment-{number:02}.md")
         with open(file, "w") as file_handle:
             file_handle.write(f"# Experiment-{number}\n\n")
             if examples:
-                file_handle.write("## Examples\n\n")
+                file_handle.write("## Examples\n")
                 write(examples, file_handle)
+                file_handle.write("\n")
             if exercises:
-                file_handle.write("## Exercises\n\n")
+                file_handle.write("## Exercises\n")
                 write(exercises, file_handle)
 
     def update(self):

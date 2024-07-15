@@ -558,4 +558,3 @@ stem(y, 'filled')
 title('Response of LSI system', 'Ashrith 200902016')
 legend('y[n]'), xlabel('n'), ylabel('Amplitude')
 ```
-

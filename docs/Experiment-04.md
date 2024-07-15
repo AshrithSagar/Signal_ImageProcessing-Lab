@@ -197,4 +197,3 @@ hold off
 title('Output Fourier Transform', "Ashrith 200902016");
 xlabel('Frequency'), ylabel('Magnitude'), legend('y')
 ```
-

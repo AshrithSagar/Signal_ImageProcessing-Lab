@@ -23,10 +23,10 @@ Install these toolboxes via MATLAB's Add-Ons menu if needed.
 
 ## References
 
-- Lab manual
+- [Lab manual](https://github.com/AshrithSagar/Signal_ImageProcessing-Lab/blob/main/Reports/S%26IPLab_2021_MANUAL.pdf)
 - Oppenheim, Alan V., and Ronald W. Schafer. "Discrete-time signal processing." Prentice Hall, 1999.
 - Gonzalez, Rafael C., and Richard E. Woods. "Digital image processing." Pearson Education India, 2018.
 
 ## License
 
-This project falls under the [MIT license](LICENSE).
+This project falls under the [MIT license](https://github.com/AshrithSagar/Signal_ImageProcessing-Lab/blob/main/LICENSE).

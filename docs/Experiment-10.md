@@ -96,4 +96,3 @@ for k = 1:length(lines)
    plot(xy(:,1), xy(:,2), 'LineWidth', 2, 'Color', 'green');
 end
 ```
-

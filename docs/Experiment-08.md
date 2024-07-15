@@ -173,4 +173,3 @@ figure;
 imshow(img_edges)
 title('Edge detection, Lenna (512\times 512)')
 ```
-

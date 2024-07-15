@@ -29,4 +29,3 @@ title('Radon transform of a Modified Shepp-Logon Phantom')
 % imshow(img_iradon)
 % title('Reconstruction through Inverse Radon transform')
 ```
-
