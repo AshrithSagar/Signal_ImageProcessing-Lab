@@ -83,9 +83,9 @@ class Updater:
             file_handle.write(self.content["README.md"])
 
     def _create_experiments(self):
-        """Create Experiment-{1..12} in self.save_dir"""
+        """Create Experiment-{01..12} in self.save_dir"""
         for i in range(1, 13):
-            file = os.path.join(self.save_dir, f"Experiment-{i}.md")
+            file = os.path.join(self.save_dir, f"Experiment-{i:02}.md")
             with open(file, "w") as file_handle:
                 file_handle.write(f"# Experiment {i}\n\n")
 
