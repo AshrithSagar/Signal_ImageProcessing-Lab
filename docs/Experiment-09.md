@@ -6,7 +6,8 @@
 
 ### Exercise-1
 
-```matlab%% Experiment - 9
+```matlab
+%% Experiment - 9
 % Exercise - 1
 clc;
 clear;

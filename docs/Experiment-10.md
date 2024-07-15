@@ -6,7 +6,8 @@
 
 ### Exercise-2
 
-```matlab%% Experiment - 10
+```matlab
+%% Experiment - 10
 % Exercise - 2
 clc;
 clear;
@@ -63,7 +64,8 @@ title('Hough lines in Road')
 
 ### Exercise-2-1
 
-```matlab%% Experiment - 10
+```matlab
+%% Experiment - 10
 % Exercise - 2
 clc;
 clear;

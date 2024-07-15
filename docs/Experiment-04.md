@@ -6,7 +6,8 @@
 
 ### Exercise-1
 
-```matlab%% Experiment - 4
+```matlab
+%% Experiment - 4
 % Exercise - 1
 clc;
 clear;
@@ -36,7 +37,8 @@ title('Pole-Zero Plot', "Ashrith 200902016");
 
 ### Exercise-2
 
-```matlab%% Experiment - 4
+```matlab
+%% Experiment - 4
 % Exercise - 2
 clc;
 clear;
@@ -66,7 +68,8 @@ title('Pole-Zero Plot', "Ashrith 200902016");
 
 ### Exercise-3
 
-```matlab%% Experiment - 4
+```matlab
+%% Experiment - 4
 % Exercise - 3
 clc;
 clear;
@@ -101,7 +104,8 @@ title('Pole-Zero Plot', "Ashrith 200902016");
 
 ### Exercise-4
 
-```matlab%% Experiment - 4
+```matlab
+%% Experiment - 4
 % Exercise - 4
 clc;
 clear;
@@ -136,7 +140,8 @@ title('Pole-Zero Plot', "Ashrith 200902016");
 
 ### Exercise-5
 
-```matlab%% Experiment - 4
+```matlab
+%% Experiment - 4
 % Exercise - 5
 clc;
 clear;

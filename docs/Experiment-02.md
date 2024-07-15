@@ -4,7 +4,8 @@
 
 ### Example-1
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Example - 1
 clc;
 clear;
@@ -48,7 +49,8 @@ xlabel('n'), ylabel('Amplitude')
 
 ### Example-2
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Example - 2
 clc;
 clear;
@@ -91,7 +93,8 @@ xlabel('n'), ylabel('Amplitude')
 
 ### Example-3
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Example - 3
 clc;
 clear;
@@ -130,7 +133,8 @@ xlabel('n'), ylabel('Amplitude')
 
 ### Example-4
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Example - 4
 clc;
 clear;
@@ -169,7 +173,8 @@ xlabel('n'), ylabel('Amplitude')
 
 ### Example-5
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Example - 5
 clc;
 clear;
@@ -205,7 +210,8 @@ end
 
 ### Example-6
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Example - 6
 clc;
 clear;
@@ -283,7 +289,8 @@ end
 
 ### Example-7
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Example - 7
 clc;
 clear;
@@ -316,7 +323,8 @@ xlabel('n'), ylabel('Amplitude')
 
 ### Example-8
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Example - 8
 clc;
 clear;
@@ -355,7 +363,8 @@ end
 
 ### Exercise-1
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Exercise - 1
 clc;
 clear;
@@ -377,7 +386,8 @@ legend('h'), xlabel('n'), ylabel('Amplitude')
 
 ### Exercise-2
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Exercise - 2
 clc;
 clear;
@@ -397,7 +407,8 @@ legend('h'), xlabel('n'), ylabel('Amplitude')
 
 ### Exercise-3
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Exercise - 3
 clc;
 clear;
@@ -415,7 +426,8 @@ stable = all(abs(p) < 1)  % Check whether all poles lie within unit circle
 
 ### Exercise-4
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Exercise - 4
 clc;
 clear;
@@ -439,7 +451,8 @@ legend('h'), xlabel('n'), ylabel('Amplitude')
 
 ### Exercise-5
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Exercise - 5
 clc;
 clear;
@@ -474,7 +487,8 @@ legend('h'), xlabel('n'), ylabel('Amplitude')
 
 ### Exercise-6
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Exercise - 6
 clc;
 clear;
@@ -516,7 +530,8 @@ legend('y_c', 'y_f'), xlabel('n'), ylabel('Amplitude')
 
 ### Exercise-7
 
-```matlab%% Experiment - 2
+```matlab
+%% Experiment - 2
 % Exercise - 7
 clc;
 clear;

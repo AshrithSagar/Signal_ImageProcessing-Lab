@@ -6,7 +6,8 @@
 
 ### Exercise-1
 
-```matlab%% Experiment - 7
+```matlab
+%% Experiment - 7
 % Exercise - 1
 clc;
 clear;
@@ -47,7 +48,8 @@ title('Histogram of Lenna `imhist`')
 
 ### Exercise-2
 
-```matlab%% Experiment - 7
+```matlab
+%% Experiment - 7
 % Exercise - 2
 clc;
 clear;
@@ -94,7 +96,8 @@ title('Contrast Stretched Lenna (512\times 512)')
 
 ### Exercise-3
 
-```matlab%% Experiment - 7
+```matlab
+%% Experiment - 7
 % Exercise - 3
 clc;
 clear;
@@ -135,7 +138,8 @@ title('DFT of Lenna')
 
 ### Exercise-4
 
-```matlab%% Experiment - 7
+```matlab
+%% Experiment - 7
 % Exercise - 4
 clc;
 clear;
@@ -194,7 +198,8 @@ title('Reconstructed image from DFT of Lenna (512\times 512)')
 
 ### Exercise-5
 
-```matlab%% Experiment - 7
+```matlab
+%% Experiment - 7
 % Exercise - 5
 clc;
 clear;
@@ -231,7 +236,8 @@ title('Reconstructed image from DFT of Lenna (512\times 512)')
 
 ### Exercise-6
 
-```matlab%% Experiment - 7
+```matlab
+%% Experiment - 7
 % Exercise - 1
 clc;
 clear;

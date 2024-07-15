@@ -4,7 +4,8 @@
 
 ### Example-1
 
-```matlab%% Experiment - 1
+```matlab
+%% Experiment - 1
 % Example - 1
 clc;
 clear;
@@ -34,7 +35,8 @@ ylabel('Amplitude')
 
 ### Example-2
 
-```matlab%% Experiment - 1
+```matlab
+%% Experiment - 1
 % Example - 2
 clc;
 clear;
@@ -64,7 +66,8 @@ ylabel('Amplitude')
 
 ### Example-3
 
-```matlab%% Experiment - 1
+```matlab
+%% Experiment - 1
 % Example - 3
 clc;
 clear;
@@ -101,7 +104,8 @@ ylabel('Amplitude')
 
 ### Example-4
 
-```matlab%% Experiment - 1
+```matlab
+%% Experiment - 1
 % Example - 4
 clc;
 clear;
@@ -139,7 +143,8 @@ ylabel('Amplitude')
 
 ### Example-5
 
-```matlab%% Experiment - 1
+```matlab
+%% Experiment - 1
 % Example - 5
 clc;
 clear;
@@ -169,7 +174,8 @@ ylabel('Amplitude')
 
 ### Exercise-1
 
-```matlab%% Experiment - 1
+```matlab
+%% Experiment - 1
 % Exercise - 1
 clc;
 clear;
@@ -218,7 +224,8 @@ ylabel('Amplitude')
 
 ### Exercise-2
 
-```matlab%% Experiment - 1
+```matlab
+%% Experiment - 1
 % Exercise - 2
 clc;
 clear;
@@ -256,7 +263,8 @@ ylabel('Amplitude')
 
 ### Exercise-3
 
-```matlab%% Experiment - 1
+```matlab
+%% Experiment - 1
 % Exercise - 3
 clc;
 clear;
@@ -278,7 +286,8 @@ ylabel('Amplitude')
 
 ### Exercise-4
 
-```matlab%% Experiment - 1
+```matlab
+%% Experiment - 1
 % Exercise - 4
 clc;
 clear;
@@ -344,7 +353,8 @@ ylabel('Amplitude')
 
 ### Exercise-5
 
-```matlab%% Experiment - 1
+```matlab
+%% Experiment - 1
 % Exercise - 5
 clc;
 clear;
@@ -405,4 +415,3 @@ legend('3-point', '5-point', 'Input')
 xlabel('n')
 ylabel('Amplitude')
 ```
-

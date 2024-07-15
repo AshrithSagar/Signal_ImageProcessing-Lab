@@ -6,7 +6,8 @@
 
 ### Exercise-1
 
-```matlab%% Experiment - 8
+```matlab
+%% Experiment - 8
 % Exercise - 1
 clc;
 clear;
@@ -41,7 +42,8 @@ title('Neighbourhood-averaging on Salt & Pepper noise added Lenna')
 
 ### Exercise-2
 
-```matlab%% Experiment - 8
+```matlab
+%% Experiment - 8
 % Exercise - 2
 clc;
 clear;
@@ -87,7 +89,8 @@ end
 
 ### Exercise-3
 
-```matlab%% Experiment - 8
+```matlab
+%% Experiment - 8
 % Exercise - 3
 clc;
 clear;
@@ -146,7 +149,8 @@ end
 
 ### Exercise-4
 
-```matlab%% Experiment - 8
+```matlab
+%% Experiment - 8
 % Exercise - 4
 clc;
 clear;

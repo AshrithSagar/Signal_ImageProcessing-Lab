@@ -6,7 +6,8 @@
 
 ### Exercise-1
 
-```matlab%% Experiment - 6
+```matlab
+%% Experiment - 6
 % Exercise - 1
 clc;
 clear;
@@ -36,7 +37,8 @@ title('Decimated Lenna (256\times 256)')
 
 ### Exercise-2
 
-```matlab%% Experiment - 6
+```matlab
+%% Experiment - 6
 % Exercise - 2
 clc;
 clear;
@@ -64,7 +66,8 @@ title('Interpolated Lenna')
 
 ### Exercise-3
 
-```matlab%% Experiment - 6
+```matlab
+%% Experiment - 6
 % Exercise - 3
 clc;
 clear;
@@ -103,7 +106,8 @@ title('Horizontally flipped Lenna (512\times 512)')
 
 ### Exercise-4
 
-```matlab%% Experiment - 6
+```matlab
+%% Experiment - 6
 % Exercise - 4
 clc;
 clear;
@@ -128,7 +132,8 @@ title('Resized Lenna (256\times 256)')
 
 ### Exercise-5
 
-```matlab%% Experiment - 6
+```matlab
+%% Experiment - 6
 % Exercise - 5
 clc;
 clear;
@@ -153,7 +158,8 @@ title('Rotated Lenna (512\times 512)')
 
 ### Exercise-6
 
-```matlab%% Experiment - 6
+```matlab
+%% Experiment - 6
 % Exercise - 6
 clc;
 clear;
@@ -179,7 +185,8 @@ title('Binary Lenna (512\times 512)')
 
 ### Exercise-7
 
-```matlab%% Experiment - 6
+```matlab
+%% Experiment - 6
 % Exercise - 7
 clc;
 clear;
@@ -209,7 +216,8 @@ title('Bit Plane Mapped Lenna (512\times 512)')
 
 ### Exercise-8
 
-```matlab%% Experiment - 6
+```matlab
+%% Experiment - 6
 % Exercise - 8
 clc;
 clear;
@@ -234,7 +242,8 @@ title('Cropped Lenna')
 
 ### Exercise-9
 
-```matlab%% Experiment - 6
+```matlab
+%% Experiment - 6
 % Exercise - 9
 clc;
 clear;

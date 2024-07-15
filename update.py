@@ -114,7 +114,7 @@ class Updater:
                 title = title.replace(".m", "")
                 title = title.replace("_", "-")
                 file_handle.write(f"### {title}\n\n")
-                file_handle.write("```matlab")
+                file_handle.write("```matlab\n")
                 file_handle.write(content)
                 file_handle.write("```\n\n")
 

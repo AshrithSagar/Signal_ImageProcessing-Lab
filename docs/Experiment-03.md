@@ -6,7 +6,8 @@
 
 ### Exercise-1
 
-```matlab%% Experiment - 3
+```matlab
+%% Experiment - 3
 % Exercise - 1
 clc;
 clear;
@@ -40,7 +41,8 @@ xlabel('n'), ylabel('Amplitude')
 
 ### Exercise-2
 
-```matlab%% Experiment - 3
+```matlab
+%% Experiment - 3
 % Exercise - 2
 clc;
 clear;
@@ -81,7 +83,8 @@ xlabel('n'), ylabel('Amplitude'), legend('y_d', 'd')
 
 ### Exercise-3
 
-```matlab%% Experiment - 3
+```matlab
+%% Experiment - 3
 % Exercise - 3
 clc;
 clear;
@@ -122,7 +125,8 @@ xlabel('n'), ylabel('Amplitude'), legend('y_d', 'd')
 
 ### Exercise-4
 
-```matlab%% Experiment - 3
+```matlab
+%% Experiment - 3
 % Exercise - 4
 clc;
 clear;
@@ -167,7 +171,8 @@ xlabel('n'), ylabel('Amplitude'), legend('y_d', 'd')
 
 ### Exercise-5
 
-```matlab%% Experiment - 3
+```matlab
+%% Experiment - 3
 % Exercise - 5
 clc;
 clear;
@@ -202,7 +207,8 @@ xlabel('n'), ylabel('Amplitude')
 
 ### Exercise-6
 
-```matlab%% Experiment - 3
+```matlab
+%% Experiment - 3
 % Exercise - 6
 clc;
 clear;
@@ -248,7 +254,8 @@ end
 
 ### Exercise-7
 
-```matlab%% Experiment - 3
+```matlab
+%% Experiment - 3
 % Exercise - 7
 clc;
 clear;
@@ -302,7 +309,8 @@ end
 
 ### Exercise-8
 
-```matlab%% Experiment - 3
+```matlab
+%% Experiment - 3
 % Exercise - 8
 clc;
 clear;

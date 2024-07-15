@@ -6,7 +6,8 @@
 
 ### Exercise-1
 
-```matlab%% Experiment - 5
+```matlab
+%% Experiment - 5
 % Exercise - 1
 clc;
 clear;
@@ -35,7 +36,8 @@ title("Pole-Zero Plot", "Ashrith 200902016")
 
 ### Exercise-10
 
-```matlab%% Experiment - 5
+```matlab
+%% Experiment - 5
 % Exercise - 10
 clc;
 clear;
@@ -74,7 +76,8 @@ title("Pole-Zero Plot", "Ashrith 200902016")
 
 ### Exercise-2
 
-```matlab%% Experiment - 5
+```matlab
+%% Experiment - 5
 % Exercise - 2
 clc;
 clear;
@@ -103,7 +106,8 @@ title("Pole-Zero Plot", "Ashrith 200902016")
 
 ### Exercise-3
 
-```matlab%% Experiment - 5
+```matlab
+%% Experiment - 5
 % Exercise - 3
 clc;
 clear;
@@ -132,7 +136,8 @@ title("Pole-Zero Plot", "Ashrith 200902016")
 
 ### Exercise-4
 
-```matlab%% Experiment - 5
+```matlab
+%% Experiment - 5
 % Exercise - 4
 clc;
 clear;
@@ -161,7 +166,8 @@ title("Pole-Zero Plot", "Ashrith 200902016")
 
 ### Exercise-5
 
-```matlab%% Experiment - 5
+```matlab
+%% Experiment - 5
 % Exercise - 5
 clc;
 clear;
@@ -190,7 +196,8 @@ title("Pole-Zero Plot", "Ashrith 200902016")
 
 ### Exercise-6
 
-```matlab%% Experiment - 5
+```matlab
+%% Experiment - 5
 % Exercise - 6
 clc;
 clear;
@@ -219,7 +226,8 @@ title("Pole-Zero Plot", "Ashrith 200902016")
 
 ### Exercise-7
 
-```matlab%% Experiment - 5
+```matlab
+%% Experiment - 5
 % Exercise - 7
 clc;
 clear;
@@ -269,7 +277,8 @@ xlabel('Normalised frequency (\times \pi rad/sample)'), ylabel('Magnitude')
 
 ### Exercise-8
 
-```matlab%% Experiment - 5
+```matlab
+%% Experiment - 5
 % Exercise - 8
 clc;
 clear;
@@ -319,7 +328,8 @@ xlabel('Normalised frequency (\times \pi rad/sample)'), ylabel('Magnitude')
 
 ### Exercise-9
 
-```matlab%% Experiment - 5
+```matlab
+%% Experiment - 5
 % Exercise - 9
 clc;
 clear;
