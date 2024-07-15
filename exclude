@@ -4,3 +4,8 @@ LICENSE
 
 utils/*
 Reports/*
+
+# *.jpg
+# *.jpeg
+# *.png
+# *.pdf

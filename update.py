@@ -42,7 +42,7 @@ class Fetch:
         all_files = result.stdout.splitlines()
         return [file for file in all_files if not self._exclude(file)]
 
-    def commit_hash(self) -> str:
+    def _get_commit_hash(self) -> str:
         """Get the commit hash of the latest commit on the main branch"""
         command = f"git rev-parse {self.branch}"
         result = subprocess.run(command.split(), capture_output=True, text=True)
@@ -52,6 +52,23 @@ class Fetch:
 
         return result.stdout.strip()
 
+    def save_commit_hash(self):
+        """Save the commit hash to a file"""
+        commit_hash = self._get_commit_hash()
+        with open("commit_hash", "w") as file_handle:
+            file_handle.write(commit_hash)
+
+    def update(self):
+        """Update the files in the repository"""
+        for file in self.files:
+            command = f"git show {self.branch}:{file}"
+            result = subprocess.run(command.split(), capture_output=True, text=True)
+
+            if not result.returncode == 0:
+                raise Exception(f"Failed to update {file}")
+
 
 if __name__ == "__main__":
     fetch = Fetch()
+    fetch.update()
+    fetch.save_commit_hash()
