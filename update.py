@@ -82,16 +82,22 @@ class Updater:
         with open(file, "w") as file_handle:
             file_handle.write(self.content["README.md"])
 
+    def _create_experiments(self):
+        """Create Experiment-{1..12} in self.save_dir"""
+        for i in range(1, 13):
+            file = os.path.join(self.save_dir, f"Experiment-{i}.md")
+            with open(file, "w") as file_handle:
+                file_handle.write(f"# Experiment {i}\n\n")
+
     def _update_experiments(self):
         for file, content in self.content.items():
             if file.startswith("Experiment"):
-                with open(file, "w") as file_handle:
-                    file_handle.write(content)
+                pass
 
     def update(self):
         # self._update_home()
+        self._create_experiments()
         # self._update_experiments()
-        pass
 
 
 if __name__ == "__main__":
