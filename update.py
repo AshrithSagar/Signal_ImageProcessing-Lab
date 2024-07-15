@@ -15,7 +15,7 @@ class Updater:
     ):
         self.branch = branch
         self.save_dir = save_dir
-        self.experiments = range(1, 13)
+        self.experiments = range(1, 11)
 
         os.makedirs(save_dir, exist_ok=True)
         self.exclude = self.get_exclude(exclude_file)
