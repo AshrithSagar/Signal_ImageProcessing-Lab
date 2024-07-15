@@ -3,7 +3,9 @@ import subprocess
 from typing import List
 
 
-class Fetch:
+class Updater:
+    """Update files in the repository from the main branch."""
+
     def __init__(
         self,
         branch: str = "main",
@@ -58,8 +60,9 @@ class Fetch:
         with open("commit_hash", "w") as file_handle:
             file_handle.write(commit_hash)
 
-    def update(self):
-        """Update the files in the repository"""
+    def fetch(self):
+        """Fetch the files in the repository"""
+        self.content = {}
         for file in self.files:
             command = f"git show {self.branch}:{file}"
             result = subprocess.run(command.split(), capture_output=True, text=True)
@@ -67,8 +70,10 @@ class Fetch:
             if not result.returncode == 0:
                 raise Exception(f"Failed to update {file}")
 
+            self.content[file] = result.stdout
+
 
 if __name__ == "__main__":
-    fetch = Fetch()
-    fetch.update()
-    fetch.save_commit_hash()
+    pages = Updater()
+    pages.fetch()
+    pages.save_commit_hash()
