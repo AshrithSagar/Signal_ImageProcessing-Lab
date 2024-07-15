@@ -1,5 +1,7 @@
 # Signal & Image Processing Lab
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Signal%20%26%20Image%20Processing%20Lab-green)](https://github.com/AshrithSagar/Signal_ImageProcessing-Lab)
+
 ## Experiments
 
 1. [Basic sequences and operations](Experiment-01.md)
