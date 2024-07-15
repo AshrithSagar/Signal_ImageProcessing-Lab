@@ -1,4 +1,5 @@
 import fnmatch
+import os
 import subprocess
 from typing import List
 
@@ -10,8 +11,12 @@ class Updater:
         self,
         branch: str = "main",
         exclude_file: str = "exclude",
+        save_dir: str = "docs/",
     ):
         self.branch = branch
+        self.save_dir = save_dir
+
+        os.makedirs(save_dir, exist_ok=True)
         self.exclude = self.get_exclude(exclude_file)
         self.files = self.list_files()
 
@@ -62,7 +67,7 @@ class Updater:
 
     def fetch(self):
         """Fetch the files in the repository"""
-        self.content = {}
+        self.content: dict[str, str] = {}
         for file in self.files:
             command = f"git show {self.branch}:{file}"
             result = subprocess.run(command.split(), capture_output=True, text=True)
@@ -72,8 +77,24 @@ class Updater:
 
             self.content[file] = result.stdout
 
+    def _update_home(self):
+        file = os.path.join(self.save_dir, "README.md")
+        with open(file, "w") as file_handle:
+            file_handle.write(self.content["README.md"])
+
+    def _update_experiments(self):
+        for file, content in self.content.items():
+            if file.startswith("Experiment"):
+                with open(file, "w") as file_handle:
+                    file_handle.write(content)
+
+    def update(self):
+        self._update_home()
+        # self._update_experiments()
+
 
 if __name__ == "__main__":
     pages = Updater()
     pages.fetch()
+    pages.update()
     pages.save_commit_hash()
