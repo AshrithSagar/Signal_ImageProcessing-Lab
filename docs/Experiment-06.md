@@ -1,7 +1,5 @@
 # Experiment-6
 
-## Examples
-
 ## Exercises
 
 ### Exercise-1

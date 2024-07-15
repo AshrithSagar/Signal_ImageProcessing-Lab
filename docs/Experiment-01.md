@@ -415,3 +415,4 @@ legend('3-point', '5-point', 'Input')
 xlabel('n')
 ylabel('Amplitude')
 ```
+

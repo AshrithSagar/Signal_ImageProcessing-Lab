@@ -122,10 +122,12 @@ class Updater:
         file = os.path.join(self.save_dir, f"Experiment-{number:02}.md")
         with open(file, "w") as file_handle:
             file_handle.write(f"# Experiment-{number}\n\n")
-            file_handle.write("## Examples\n\n")
-            write(examples, file_handle)
-            file_handle.write("## Exercises\n\n")
-            write(exercises, file_handle)
+            if examples:
+                file_handle.write("## Examples\n\n")
+                write(examples, file_handle)
+            if exercises:
+                file_handle.write("## Exercises\n\n")
+                write(exercises, file_handle)
 
     def update(self):
         # self._update_home()
