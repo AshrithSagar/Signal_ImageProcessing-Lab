@@ -89,8 +89,9 @@ class Updater:
                     file_handle.write(content)
 
     def update(self):
-        self._update_home()
+        # self._update_home()
         # self._update_experiments()
+        pass
 
 
 if __name__ == "__main__":

@@ -2,6 +2,7 @@
 .gitattributes
 LICENSE
 
+README.md
 utils/*
 Reports/*
 
