@@ -15,7 +15,7 @@ class Updater:
     ):
         self.branch = branch
         self.save_dir = save_dir
-        self.experiments = range(1, 11)
+        self.experiments = [f"Experiment-{i}" for i in range(1, 11)]
 
         os.makedirs(save_dir, exist_ok=True)
         self.exclude = self.get_exclude(exclude_file)
@@ -84,20 +84,20 @@ class Updater:
             file_handle.write(self.content["README.md"])
 
     def _create_experiments(self):
-        """Create Experiment-{01..12} in self.save_dir"""
-        for i in self.experiments:
-            file = os.path.join(self.save_dir, f"Experiment-{i:02}.md")
+        """Create experiments in self.save_dir"""
+        for experiment in self.experiments:
+            file = os.path.join(self.save_dir, f"{experiment}.md")
             if os.path.exists(file):
                 continue
             with open(file, "w") as file_handle:
-                file_handle.write(f"# Experiment {i}\n\n")
+                file_handle.write(f"# {experiment}\n\n")
 
-    def _update_experiment(self, number: int):
+    def _update_experiment(self, name: int):
         def segregate():
             experiment: dict[str, str] = {}
             for file, content in self.content.items():
-                if file.startswith(f"Experiment-{number}/"):
-                    file = file.replace(f"Experiment-{number}/", "")
+                if file.startswith(f"{name}/"):
+                    file = file.replace(f"{name}/", "")
                     experiment[file] = content
 
             examples: dict[str, str] = {}
@@ -119,9 +119,9 @@ class Updater:
                 file_handle.write("```\n")
 
         examples, exercises = segregate()
-        file = os.path.join(self.save_dir, f"Experiment-{number:02}.md")
+        file = os.path.join(self.save_dir, f"{name}.md")
         with open(file, "w") as file_handle:
-            file_handle.write(f"# Experiment-{number}\n\n")
+            file_handle.write(f"# {name}\n\n")
             if examples:
                 file_handle.write("## Examples\n")
                 write(examples, file_handle)
@@ -133,8 +133,8 @@ class Updater:
     def update(self):
         # self._update_home()
         self._create_experiments()
-        for number in self.experiments:
-            self._update_experiment(number)
+        for experiment in self.experiments:
+            self._update_experiment(experiment)
 
 
 if __name__ == "__main__":
